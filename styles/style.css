@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*Mobile First*/
+
 *{
     font-family: 'Signika Negative', sans-serif;
     margin: 0;
@@ -9,42 +11,78 @@
 
 header{
     width: 100vw;
-    height: 100vh;
+    height: 91vh;
+    overflow: hidden;
 }
 
-h1{
+header>h1{
     text-align: center;
     font-size: 2em;
     padding-top: 12px;
 }
 
-h2{
+header>h2{
     text-align: center;
     font-size: 4em;
 }
 
-section{
+header>section{
     width: fit-content;
     margin: auto;
+    padding-bottom: 10px;
 }
 
-a.clicavel{
+header>section>a.clicavel{
     text-decoration: none;
 }
 
-img.size-img{
+header>section>a>img.size-img{
     margin: 5px;
     width: 50px;
 }
 
-p{
+header>p{
+    font-size: large;
     text-align: justify;
-    width: 250px;
+    width: 260px;
     margin: auto;
     padding-bottom: 20px;
 }
 
-button{
+header>button{
+    font-size: 1.3em;
+    text-decoration: underline;
     display: block;
     margin: auto;
+    width: 100vw;
+    height: 50px;
+    border: none;
+}
+
+header>button:hover {
+    cursor: pointer;
+}
+
+#under-email{
+    text-align: center;
+}
+
+#slide-down{
+    width: 32px;
+    display: block;
+    margin: auto;
+    position: relative;
+    animation-duration: 2s;
+    animation-name: todown;
+    animation-iteration-count: infinite;
+}
+
+@keyframes todown {
+    0% {
+        top: 2%
+    } 50% {
+        top: 5%
+    } 100% {
+        top: 2%
+    }
 }
