@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem Vindo</title>
+    <title>EOM | Frontend</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="styles/mobile-first.css">
+    <link rel="stylesheet" href="styles/other-medias.css">
 </head>
 <body>
     <header>
@@ -28,18 +29,25 @@
             <a class="clicavel" href="https://github.com/EduardoDuduu/" target="_blank">
                 <img class="size-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"/>
             </a>
-            <a class="clicavel" href="#" target="_blank">
+            <a class="clicavel" href="documents/Curriculo-Eduardo de Oliveira M..pdf" target="_blank" type="application/pdf">
                 <img class="size-img" src="image/google-docs.png" alt="portfolio em pdf">
             </a>
         </section>
         <P>
             Tenho 21 anos, sou desenvolvedor frontend, com 1 ano de experiência trabalhando como freelancer.
         </P>
-        <button onclick="">eu@exemplo.com</button>
+        <div>
+            <input type="email" name="nmyEmail" id="myEmail" value="eu@exemplo.com">
+            <input type="button" id="button" value="Copiar" onclick="copyEmail()">
+        </div>
         <p id="under-email"><small>Clique para copiar</small></p>
         <img id="slide-down" src="image/seta-para-baixo.png" alt="seta para baixo">
     </header>
     <main>
+        <h1>Tecnologias</h1>
+
     </main>
+
+    <script src="scripts/clicktocopy.js"></script>
 </body>
 </html>

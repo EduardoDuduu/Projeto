@@ -8,39 +8,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header{
     width: 100vw;
-    height: 91vh;
+    height: 100vh;
     overflow: hidden;
 }
-
 header>h1{
     text-align: center;
     font-size: 2em;
     padding-top: 12px;
 }
-
 header>h2{
     text-align: center;
     font-size: 4em;
 }
-
 header>section{
     width: fit-content;
     margin: auto;
     padding-bottom: 10px;
 }
-
 header>section>a.clicavel{
     text-decoration: none;
 }
-
 header>section>a>img.size-img{
     margin: 5px;
     width: 50px;
 }
-
 header>p{
     font-size: large;
     text-align: justify;
@@ -48,25 +41,33 @@ header>p{
     margin: auto;
     padding-bottom: 20px;
 }
-
-header>button{
-    font-size: 1.3em;
-    text-decoration: underline;
-    display: block;
+header>div{
     margin: auto;
-    width: 100vw;
-    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+}
+header>div>input#myEmail{
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+header>div>input#button{
+    font-size: 1.3em;
+    padding: 0px 10px;
+    background-color: #00b900;
+    border-radius: 15px;
     border: none;
 }
-
 header>button:hover {
     cursor: pointer;
 }
-
 #under-email{
     text-align: center;
 }
-
 #slide-down{
     width: 32px;
     display: block;
@@ -76,7 +77,6 @@ header>button:hover {
     animation-name: todown;
     animation-iteration-count: infinite;
 }
-
 @keyframes todown {
     0% {
         top: 2%
@@ -85,4 +85,14 @@ header>button:hover {
     } 100% {
         top: 2%
     }
+}
+
+main{
+    background-image: linear-gradient(to top, #003079, 65%, #ffffff);
+    width: 100vw;
+    height: 100vh;
+}
+
+main>h1{
+    text-align: center;
 }
