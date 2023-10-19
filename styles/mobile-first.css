@@ -86,9 +86,9 @@ header>div>input#button{
 }
 
 main{
-    background-image: linear-gradient(to top, #003079, 65%, #ffffff);
+    background-image: linear-gradient(to top, #003c96, 65%, #ffffff);
     width: 100vw;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 main>h1{
@@ -115,4 +115,17 @@ main>h2{
     text-align: center;
     font-size: 2em;
     margin-top: 20px;
+}
+
+main>section#exemplo-celular-e-tablet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+main>section>.responsivo-telefone{
+    width: 100px;
+    margin: 15px;
 }
